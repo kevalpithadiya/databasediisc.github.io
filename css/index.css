@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+	background-color: #002b36;
+	font-family: Ubuntu;
+	color: #93a1a1;
+	font-size: 2em;
+}
+
+#only-content{
+	text-align: center;
+}
