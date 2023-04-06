@@ -17,7 +17,7 @@ if (document.location.href.indexOf("/member/") > -1)
                 var photo = data.records[0].fields.Photo[0].url;
             }
             else{
-                var photo = "img/user.png";
+                var photo = "/img/user.png";
             }
             bio = data.records[0].fields.Bio ? data.records[0].fields.Bio : "";
             document.querySelector("#profile-photo").style.backgroundImage = `url(${photo})`;
