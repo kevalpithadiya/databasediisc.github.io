@@ -17,14 +17,14 @@ fetch(
 
 function add_data(data) {
     for (let i of data) {
-        document.getElementById("people-list").appendChild(create_person(i.fields, i.id));
+        document.getElementById("people-list").appendChild(create_person(i.fields));
     }
 }
 
-function create_person(data, id) {
+function create_person(data) {
     let link = document.createElement("a");
     link.className = "profile-link";
-    link.href = "/profile.html?id=" + id;
+    link.href = "/member/" + data.Username;
     link.className = "person-element";
     data.Photo = data.Photo??[{url: "../img/user.png"}];
     link.innerHTML = `<div class="person-profile" 
