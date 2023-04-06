@@ -132,7 +132,6 @@ function loadBlogs({ feed }) {
 
     if(entry.media$thumbnail){
       var thumbSrc = entry.media$thumbnail.url;
-      console.log(thumbSrc);
       thumbSrc = thumbSrc.split("/s72-")[0] + "/s600-c/" + thumbSrc.split("/s72-")[1].split('/')[1];
     }
     else{
