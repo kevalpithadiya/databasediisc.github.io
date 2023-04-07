@@ -120,7 +120,7 @@ document
 function loadBlogs({ feed }) {
   var i = 0;
   feed.entry.forEach(function (entry) {
-    if (i == 3) return;
+    if (i == 4) return;
     var categoryTags = "";
     if (entry.category) {
       entry.category.forEach(function (category) {
@@ -142,7 +142,7 @@ function loadBlogs({ feed }) {
     <a href="${entry.link[0].href}">
       <div
         class="img-container"
-        style="background-image: url(${thumbSrc})"
+        style="background-image: url('${thumbSrc}')"
       ></div>
       <h2>${entry.title.$t}</h2>
       <p class="blogCategories">${categoryTags}</p>
