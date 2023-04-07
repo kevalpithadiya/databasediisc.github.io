@@ -88,7 +88,7 @@ fetch(
         document.querySelector("#eventModal .modalTopics").innerHTML =
           topicTags;
         document.querySelector("#eventModal .modalDescription").innerHTML =
-          row.fields.Description;
+          row.fields.Description ? row.fields.Description : "";
       });
     });
     tryUnload();

@@ -211,8 +211,9 @@
 #eventModal .modalImg{
   border-radius: 20px 20px 0 0;
   padding-top: 60%;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 #eventModal .modalImg img{
