@@ -118,6 +118,7 @@ document
   });
 
 function loadBlogs({ feed }) {
+  console.log(feed);
   var i = 0;
   feed.entry.forEach(function (entry) {
     if (i == 4) return;
@@ -158,7 +159,7 @@ function loadBlogs({ feed }) {
 var UNLOAD_TRIAL = 0;
 function tryUnload() {
   UNLOAD_TRIAL += 1;
-  if (UNLOAD_TRIAL == 2) {
+  if (UNLOAD_TRIAL == 1) {
     unload();
   }
 }
