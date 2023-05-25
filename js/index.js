@@ -159,7 +159,7 @@ function loadBlogs({ feed }) {
 var UNLOAD_TRIAL = 0;
 function tryUnload() {
   UNLOAD_TRIAL += 1;
-  if (UNLOAD_TRIAL == 1) {
+  if (UNLOAD_TRIAL == 1) { // this is supposed to be 2! (Events + Blogs = 2)
     unload();
   }
 }
