@@ -91,7 +91,8 @@ fetch(
           row.fields.Description ? row.fields.Description : "";
       });
     });
-    tryUnload();
+    // tryUnload();
+    unload();
   });
 
 function eventsModalImage(e) {
@@ -152,14 +153,14 @@ function loadBlogs({ feed }) {
     i += 1;
   });
 
-  tryUnload();
+  // tryUnload();
 }
 
 
-var UNLOAD_TRIAL = 0;
-function tryUnload() {
-  UNLOAD_TRIAL += 1;
-  if (UNLOAD_TRIAL == 1) { // this is supposed to be 2! (Events + Blogs = 2)
-    unload();
-  }
-}
+// var UNLOAD_TRIAL = 0;
+// function tryUnload() {
+//   UNLOAD_TRIAL += 1;
+//   if (UNLOAD_TRIAL == 1) { // this is supposed to be 2! (Events + Blogs = 2)
+//     unload();
+//   }
+// }
