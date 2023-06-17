@@ -458,3 +458,19 @@
     margin: 10px 0 0 0;
   }
 }
+
+.hubspot-form {
+  margin-top: 15px;
+  margin-inline: 20%;
+  padding-top: 15px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  background-color: #cfd9e0;
+}
+
+#hubspot-form-title {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  margin-block: 10px;
+}
