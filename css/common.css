@@ -181,11 +181,12 @@ footer img{
 }
 
 .footer-link {
+  transition: 0.3s;
   text-decoration: none;
 }
 
 .footer-link:hover {
-  text-decoration: underline;
+  color: #a2a2ff;
 }
 
 .footer-main {

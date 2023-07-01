@@ -5,8 +5,8 @@ footerTemplate.innerHTML = `
 <div class="footer-text" id="info">
   <h1>Databased</h1>
   <h4>
-    <a class="footer-link" href="https://csa.iisc.ac.in">
-      The Department of Computer Science and Automation (CSA)
+    <a class="footer-link" href="https://csa.iisc.ac.in"> 
+      Department of Computer Science and Automation (CSA)
     </a>
     <br />
   </h4>
@@ -17,8 +17,7 @@ footerTemplate.innerHTML = `
   </h5>
   <br>
   <h6>
-    Copyright © <span class="copyright">2023</span> by The Department of Computer Science and Automation, Indian
-    Institute of Science, Bengaluru - 560012, INDIA.
+    Copyright © <span class="copyright">2023</span> IISc, Bengaluru
   </h6>
 </div>
 <div class="footer-logo">
