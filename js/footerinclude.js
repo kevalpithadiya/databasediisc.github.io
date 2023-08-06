@@ -1,4 +1,5 @@
 const footerTemplate = document.createElement('template');
+const headerTemplade = document.createElement('template');
 
 footerTemplate.innerHTML = `
 <div class="footer-main">
@@ -26,6 +27,34 @@ footerTemplate.innerHTML = `
 </div>
 `;
 
+headerTemplade.innerHTML = `
+<nav>
+<div class="nav-box">
+  <a href="#" class="headerLogo">
+    <img src="/img/Logo_transparent.png" alt="databased logo"/>
+  </a>
+
+  <a href="/about" class="nav-list-link">About</a>
+  <a href="/learn" class="nav-list-link">Learn</a>
+  <a href="/events" class="nav-list-link">Events</a>
+  <a href="https://databasediisc.blogspot.com/" class="nav-list-link">Blog</a>
+  <a href="#contact" class="nav-list-link">Contact</a>
+
+  <a id="nav-hamburger" data-state="inactive">
+    <span></span><span></span><span></span>
+    <p>&times;</p>
+  </a>
+</div>
+</nav>
+<div id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="/learn">Learn</a>
+  <a href="#events">Events</a>
+  <a href="https://databasediisc.blogspot.com/">Blog</a>
+  <a href="#contact">Contact</a>
+</div>
+`;
+
 class Footer extends HTMLElement {
   constructor() {
     super();
@@ -36,4 +65,15 @@ class Footer extends HTMLElement {
   }
 }
 
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = headerTemplade.innerHTML;
+  }
+}
+
 customElements.define('footer-component', Footer);
+customElements.define('header-component', Header);
