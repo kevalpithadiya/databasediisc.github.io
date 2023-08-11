@@ -210,3 +210,12 @@ footer img{
     text-align: center;
   }
 }
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+}
