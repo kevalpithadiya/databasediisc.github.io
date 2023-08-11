@@ -30,7 +30,7 @@ footerTemplate.innerHTML = `
 headerTemplade.innerHTML = `
 <nav>
 <div class="nav-box">
-  <a href="#" class="headerLogo">
+  <a href="/" class="headerLogo">
     <img src="/img/Logo_transparent.png" alt="databased logo"/>
   </a>
 
