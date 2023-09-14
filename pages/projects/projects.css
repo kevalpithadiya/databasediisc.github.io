@@ -89,6 +89,10 @@
     line-height: 40px;
 }
 
+.project-button-icon {
+    height: 25px;
+}
+
 .project-button-label {
     width: 70%;
     text-align: center;
