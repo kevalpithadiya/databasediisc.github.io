@@ -35,9 +35,10 @@ headerTemplade.innerHTML = `
   </a>
 
   <a href="/about" class="nav-list-link">About</a>
-  <a href="/learn" class="nav-list-link">Learn</a>
+  <!-- <a href="/learn" class="nav-list-link">Learn</a> -->
   <a href="/events" class="nav-list-link">Events</a>
   <a href="https://databasediisc.blogspot.com/" class="nav-list-link">Blog</a>
+  <a href="/pages/projects" class="nav-list-link">Projects</a>
   <a href="#contact" class="nav-list-link">Contact</a>
 
   <a id="nav-hamburger" data-state="inactive">
@@ -48,9 +49,10 @@ headerTemplade.innerHTML = `
 </nav>
 <div id="mobileMenu">
   <a href="#about">About</a>
-  <a href="/learn">Learn</a>
+  <!-- <a href="/learn">Learn</a> -->
   <a href="#events">Events</a>
   <a href="https://databasediisc.blogspot.com/">Blog</a>
+  <a href="/pages/projects">Projects</a>
   <a href="#contact">Contact</a>
 </div>
 `;
