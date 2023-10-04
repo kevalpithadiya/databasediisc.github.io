@@ -62,7 +62,7 @@ nav {
 .nav-list-link {
   text-decoration: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.4em;
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -71,7 +71,7 @@ nav {
   transition: all 0.3s;
 }
 .nav-list-link:hover {
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 #nav-hamburger{
   display: none;
@@ -209,4 +209,13 @@ footer img{
   .footer-text {
     text-align: center;
   }
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;
 }

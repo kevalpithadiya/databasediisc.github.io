@@ -27,15 +27,6 @@
   overflow: auto;
 }
 
-.title {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 40px;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
 .about-content,
 #about img {
   width: 50%;
