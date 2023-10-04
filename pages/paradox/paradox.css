@@ -1,0 +1,133 @@
+#title {
+  background-image: url("/img/Backgrounds/Taieri_mini.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+}
+
+#title > h1 {
+  text-align: center;
+  align-self: center;
+  font-size: 4em;
+}
+
+#festival-description {
+  text-align: center;
+  max-width: 1200px;
+  margin-inline: 10%;
+  margin-block: 50px;
+  font-size: 1.25em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+#index-list {
+  text-align: left;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    flex-direction: column;
+  }
+  .yt-embed {
+    width: 100%;
+  }
+  #index-list {
+    max-width: 100%;
+  }
+}
+
+.index-link-item::marker {
+  padding-right: 5px;
+}
+.index-link-item {
+  padding-block: 1px;
+}
+
+#index-content-heading {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+#index-content-container {
+  min-width: fit-content;
+  height: fit-content;
+  padding-block: 15px;
+  padding-left: 25px; /* places the margin outside the numbering */
+  margin: 15px;
+  border: 2px solid #303030;
+  border-radius: 5px;
+  background-color: #2f2f30;
+}
+
+.paradox-spoiler {
+  background-color: #b7b7b7;
+  border: solid 2px #b7b7b7;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.paradox-spoiler[open] {
+  margin: 10px;
+}
+
+#paradox-content-container {
+  margin: 15px;
+  flex: 1;
+}
+
+.paradox-title {
+  text-align: left;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 5px;
+  margin-bottom: 0px;
+  padding: 5px;
+  color: black;
+}
+.paradox-spoiler[open] .paradox-title {
+  border-bottom: solid 2px;
+}
+
+.paradox-content {
+  margin: 5px;
+  margin-top: 0px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.paradox-description {
+  flex: 1;
+  text-align: left;
+  padding: 5px 10px 5px 5px;
+  color: black;
+}
+
+.yt-embed {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+}
+
+.yt-embed-container {
+  width: 500px;
+}
+
+@media screen and (max-width: 1150px) {
+  .paradox-content {
+    flex-direction: column;
+  }
+  .yt-embed-container {
+    width: 100%;
+  }
+}
