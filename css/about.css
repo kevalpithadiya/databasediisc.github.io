@@ -33,6 +33,38 @@ main {
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+}
+
+.batch-container {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.batch-header {
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  color: white;
+  background-color: #10101090;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.batch-header.active, .batch-header:hover {
+  background-color: #101010d0;
+}
+
+.batch-members {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #10101063;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .person-element {

@@ -1,7 +1,7 @@
 if (document.location.href.indexOf("/member/") > -1) 
 {
   var username = document.location.href.split("/member/")[1].split("/")[0];
-  fetch(`https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles?filterByFormula=username='${username}'`, {
+  fetch(`https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles%20copy?filterByFormula=username='${username}'`, {
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -25,7 +25,7 @@ if (document.location.href.indexOf("/member/") > -1)
             document.querySelector("#profile-email").href = "mailto:" + data.records[0].fields.Email;
             document.querySelector("#profile-linkedin").href = data.records[0].fields.LinkedIn;
             document.querySelector("#profile-github").href = data.records[0].fields.GitHub;
-            unload();        
+            unload();
         }
     });
 }
