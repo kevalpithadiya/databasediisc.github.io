@@ -24,6 +24,14 @@ footer{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
 }
+#profile-batch{
+    width: fit-content;
+    padding: 3px 8px 3px 8px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0px auto 20px auto;
+}
 #profile-bio{
     font-size: 18px;
     max-width: 600px;
