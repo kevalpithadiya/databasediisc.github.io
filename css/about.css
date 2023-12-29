@@ -52,6 +52,15 @@ main {
   transition: background-color 0.1s;
 }
 
+.batch-header .material-symbols-outlined {
+  transform: translateY(3px);
+  transition: transform 0.3s;
+}
+
+.batch-header.active .material-symbols-outlined {
+  transform: translateY(3px) rotate(90deg);
+}
+
 .batch-header.active, .batch-header:hover {
   background-color: #101010d0;
 }

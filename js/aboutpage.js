@@ -51,7 +51,7 @@ function create_batch(title) {
     document.getElementById("people-list").appendChild(container);
 
     let header = document.createElement("div");
-    header.innerHTML = batch;
+    header.innerHTML = "<span class='material-symbols-outlined'>chevron_right</span>" + batch;
     header.className = "batch-header";
     container.appendChild(header);
 
