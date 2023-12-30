@@ -108,7 +108,6 @@ main {
   top: -15px;
   left: -15px;
   border: 5px solid transparent;
-  transition: 0.3s all;
 }
 
 .person-name {
@@ -119,11 +118,8 @@ main {
   top: 0;
 }
 .person-element:hover .person-profile {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .person-element:hover .person-profile::before {
   border-color: #fff;
-}
-.person-element:hover .person-name {
-  top: 20px;
 }
