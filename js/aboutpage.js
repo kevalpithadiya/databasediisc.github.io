@@ -40,6 +40,8 @@ function add_data(data) {
         for (member_data of batch_map[batch]) {
             members.appendChild(create_person(member_data));
         }
+
+        toggle_collapsible(members.previousElementSibling);
     }
 }
 
@@ -51,26 +53,28 @@ function create_batch(title) {
     document.getElementById("people-list").appendChild(container);
 
     let header = document.createElement("div");
-    header.innerHTML = "<span class='material-symbols-outlined'>chevron_right</span>" + batch;
+    header.innerHTML = "<span class='material-symbols-outlined'>chevron_right</span>" + title;
     header.className = "batch-header";
     container.appendChild(header);
 
-    header.addEventListener("click", e => {
-        let content = e.target.nextElementSibling;
-        e.target.classList.toggle("active");
-        
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
+    header.addEventListener("click", e => toggle_collapsible(e.target));
 
     let members = document.createElement("div");
     members.className = "batch-members";
     container.appendChild(members);
 
     return members;
+}
+
+function toggle_collapsible(headerElement) {
+    let content = headerElement.nextElementSibling;
+    headerElement.classList.toggle("active");
+    
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
 }
 
 function create_person(data) {
