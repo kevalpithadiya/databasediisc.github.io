@@ -17,6 +17,7 @@ main {
 
 .about-content {
   text-align: justify;
+  padding: 0 15px;
 }
 
 .title {
