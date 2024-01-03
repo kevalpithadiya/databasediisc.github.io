@@ -1,5 +1,5 @@
 fetch(
-    `https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles%20copy?maxRecords=1000&view=Grid%20view`,
+    `https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles?maxRecords=1000&view=Grid%20view`,
     {
         method: "GET",
         headers: {

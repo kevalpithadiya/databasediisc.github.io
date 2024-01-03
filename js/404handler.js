@@ -1,7 +1,7 @@
 if (document.location.href.indexOf("/member/") > -1) 
 {
   var username = document.location.href.split("/member/")[1].split("/")[0];
-  fetch(`https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles%20copy?filterByFormula=username='${username}'`, {
+  fetch(`https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles?filterByFormula=username='${username}'`, {
     method: "GET",
     headers: {
       Accept: "application/json",
