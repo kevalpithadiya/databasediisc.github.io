@@ -21,11 +21,12 @@ if (document.location.href.indexOf("/member/") > -1)
             bio = data.records[0].fields.Bio ? data.records[0].fields.Bio : "";
             document.querySelector("#profile-photo").style.backgroundImage = `url(${photo})`;
             document.querySelector("#profile-name").innerHTML = data.records[0].fields.Name;
+            document.querySelector("#profile-batch").innerHTML = "BATCH OF " + data.records[0].fields.Batch;
             document.querySelector("#profile-bio").innerHTML = bio;
             document.querySelector("#profile-email").href = "mailto:" + data.records[0].fields.Email;
             document.querySelector("#profile-linkedin").href = data.records[0].fields.LinkedIn;
             document.querySelector("#profile-github").href = data.records[0].fields.GitHub;
-            unload();        
+            unload();
         }
     });
 }

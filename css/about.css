@@ -17,6 +17,7 @@ main {
 
 .about-content {
   text-align: justify;
+  padding: 0 15px;
 }
 
 .title {
@@ -33,6 +34,47 @@ main {
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+}
+
+.batch-container {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.batch-header {
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  color: white;
+  background-color: #10101090;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.batch-header .material-symbols-outlined {
+  transform: translateY(3px);
+  transition: transform 0.3s;
+}
+
+.batch-header.active .material-symbols-outlined {
+  transform: translateY(3px) rotate(90deg);
+}
+
+.batch-header.active, .batch-header:hover {
+  background-color: #101010d0;
+}
+
+.batch-members {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #10101063;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .person-element {
@@ -67,7 +109,6 @@ main {
   top: -15px;
   left: -15px;
   border: 5px solid transparent;
-  transition: 0.3s all;
 }
 
 .person-name {
@@ -78,11 +119,8 @@ main {
   top: 0;
 }
 .person-element:hover .person-profile {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .person-element:hover .person-profile::before {
   border-color: #fff;
-}
-.person-element:hover .person-name {
-  top: 20px;
 }
