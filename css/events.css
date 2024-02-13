@@ -66,9 +66,9 @@ display: none;
 
 #eventsGrid > div {
   float: left;
-  width: calc(100% / 2 - 4px);
+  width: calc(100% / 2 - 10px);
   box-sizing: border-box;
-  margin: 2px;
+  margin: 5px;
   border-radius: 5px;
   text-align: left;
   position: relative;
@@ -168,7 +168,7 @@ display: none;
 #eventModal .modalImg{
   border-radius: 20px 20px 0 0;
   padding-top: 60%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
