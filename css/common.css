@@ -69,6 +69,7 @@ nav {
   width: 150px;
   text-align: center;
   transition: all 0.3s;
+  white-space: nowrap;
 }
 .nav-list-link:hover {
   letter-spacing: 4px;

@@ -179,7 +179,7 @@ fetch(
           imgTags;
         document.querySelector(
           "#eventModal .modalImg"
-        ).style.backgroundImage = `url(${imgSrc[0]})`;
+        ).style.backgroundImage = `url(${imgSrc[0]}), linear-gradient(90deg, #ddd 0%, #ddd)`;
         document.querySelector("#eventModal .imagesButtons").innerHTML =
           `<button onClick="eventsModalImage(this)"></button>`.repeat(
             imgSrc.length
@@ -233,7 +233,7 @@ function eventsModalImage(e) {
       "#eventModal .modalImg"
     ).style.backgroundImage = `url(${
       document.querySelectorAll("#eventModal .imagesContainer img")[i].src
-    })`;
+    }), linear-gradient(90deg, #ddd 0%, #ddd)`;
   });
 }
 
