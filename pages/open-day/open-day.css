@@ -79,10 +79,6 @@
     transition: box-shadow 0.2s;
 }
 
-.project-box:hover .project-thumbnail {
-    box-shadow: 0px 0px 10px #444444;
-}
-
 .project-info {
     display: flex;
     flex-direction: column;
