@@ -1,8 +1,8 @@
 #title{
   background-image: url(../img/backgroundsbundle/Whangaehu.png);
   text-align: center;
-  min-height: 100vh;
-  padding-top: 80px;
+  height: 100vh;
+  padding-top: 100px;
   padding-bottom: 80px;
 
   display: flex;
@@ -48,6 +48,10 @@
   letter-spacing: 4px;
 }
 
+#major-event-info-title > span {
+  font-size: 80px;
+}
+
 #major-event-info-btn {
   clear: both;
   display: block;
@@ -90,15 +94,17 @@
   background-position: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (orientation: portrait) {
   #title h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   #major-event-container {
     flex-direction: column;
     align-items: center;
+    width: 600px;
     height: auto;
+    max-height: 80vh;
     aspect-ratio: auto;
   }
 
@@ -110,6 +116,10 @@
 
   #major-event-info-title {
     font-size: 30px;
+  }
+
+  #major-event-info-title > span {
+    font-size: 60px;
   }
 
   #major-event-info-btn {
