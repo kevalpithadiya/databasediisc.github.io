@@ -40,7 +40,6 @@ headerTemplade.innerHTML = `
   <a href="https://databasediisc.blogspot.com/" class="nav-list-link">Blog</a>
   <a href="/pages/projects" class="nav-list-link">Projects</a>
   <a href="/#contact" class="nav-list-link">Contact</a>
-  <a href="/pages/open-day" class="nav-list-link">Open Day</a>
 
   <a id="nav-hamburger" data-state="inactive">
     <span></span><span></span><span></span>
@@ -55,7 +54,6 @@ headerTemplade.innerHTML = `
   <a href="https://databasediisc.blogspot.com/">Blog</a>
   <a href="/pages/projects">Projects</a>
   <a href="/#contact">Contact</a>
-  <a href="/pages/open-day">Open Day</a>
 </div>
 `;
 
