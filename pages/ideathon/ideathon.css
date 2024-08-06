@@ -59,7 +59,7 @@ main {
 }
 
 #schedule th, #schedule td {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: #0d2232;
 	text-align: center;
 	font-size: 18px;
 	border: solid 1px #fff;
