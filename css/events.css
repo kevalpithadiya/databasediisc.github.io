@@ -1,5 +1,5 @@
 #title{
-  background-image: url(../img/backgroundsbundle/Whangaehu.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%,  rgba(0, 0, 0, 0.4) 100%), url(../img/backgroundsbundle/Whangaehu.png);
   text-align: center;
   height: 100vh;
   padding-top: 100px;
