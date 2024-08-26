@@ -122,6 +122,53 @@
 //   true
 // );
 
+// Array of objects containing formatted text, page link and image to be displayed on the title page
+let major_events = [
+  {
+    text: `<span style="font-size: 30px;">DATABASED</span> <br/> <b>TECH <br/> IDEATHON</b>`,
+    link: "../pages/ideathon",
+    img: "../img/ideathon/ideathon_presentation.webp"
+  },
+  {
+    text: `<span style="font-size: 80px;"><b>IISc</b></span> <br/> OPEN DAY <br/> 2024`,
+    link: "../pages/open-day",
+    img: "../img/open-day/team.webp"
+  }
+]
+
+// Modify DOM to display major event of given index
+function display_event(event_arr, index) {
+  window.major_event_index = index;
+  cur_event = event_arr[index];
+
+  document.querySelector("#major-event-info-title").innerHTML = cur_event.text;
+  document.querySelector("#major-event-info-btn").href = cur_event.link;
+  document.querySelector("#major-event-photo").style.backgroundImage = `url(${cur_event.img})`;
+  document.querySelector("#major-event-slider-count").innerHTML = `${index + 1} / ${event_arr.length}`;
+}
+
+function next_event() {
+  new_index = window.major_event_index + 1;
+  new_index %= major_events.length;
+  display_event(major_events, new_index);
+}
+
+function prev_event() {
+  new_index = window.major_event_index == 0 ? major_events.length - 1 : major_events.length;
+  new_index %= major_events.length;
+  display_event(major_events, new_index);
+}
+
+// Initialize the major event display
+display_event(major_events, 0);
+document.querySelector("#major-event-prev").addEventListener('click', prev_event);
+document.querySelector("#major-event-next").addEventListener('click', next_event);
+
+// Loop through each event at regular intervals
+setInterval(next_event, 5000);
+
+// Code for fetching events from Airtable
+
 fetch(
   `https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Events?view=Grid%20view`,
   {
