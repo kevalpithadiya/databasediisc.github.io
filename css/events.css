@@ -1,5 +1,5 @@
 #title{
-  background-image: url(../img/backgroundsbundle/Whangaehu.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%,  rgba(0, 0, 0, 0.4) 100%), url(../img/backgroundsbundle/Whangaehu.png);
   text-align: center;
   height: 100vh;
   padding-top: 100px;
@@ -36,6 +36,8 @@
 #major-event-info {
   height: 100%;
   width: 35%;
+  padding: 20px 0 0 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,10 +48,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   letter-spacing: 4px;
-}
-
-#major-event-info-title > span {
-  font-size: 80px;
+  margin-top: auto;
 }
 
 #major-event-info-btn {
@@ -84,11 +83,40 @@
   color: #fff;
 }
 
+#major-event-slider {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(100, 100, 100, 0.5);
+  margin-top: auto;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-btn {
+  width: 50px;
+  height: 100%;
+  line-height: 125%;
+
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.slider-btn:hover {
+  background-color: black;
+}
+
+.slider-count {
+  width: calc(100% - 100px);
+  height: 100%;
+  font-size: 16px;
+  line-height: 30px;
+}
+
 #major-event-photo {
   width: 65%;
   height: 100%;
 
-  background: url("../img/open-day/team.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -126,10 +154,24 @@
     margin-top: 10px;
   }
 
+  #major-event-slider {
+    margin-top: 20px;
+    height: 40px;
+  }
+
+  .slider-btn {
+    font-size: 30px;
+  }
+
+  .slider-count {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
   #major-event-photo {
-    width: calc(100% - 10px);
+    width: calc(100%);
     height: auto;
-    margin: 30px 0 5px 0;
+    margin: 0 0;
     aspect-ratio: 1.3;
   }
 }
