@@ -1,4 +1,8 @@
-#title {
+body {
+  background-attachment: fixed;
+}
+
+/* #title {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%,  rgba(0, 0, 0, 0.7) 100%), url(../../img/backgroundsbundle/Kander.png);
   text-align: center;
   height: 100vh;
@@ -23,12 +27,12 @@
 #title h2 {
   font-size: 60px;
   text-shadow: #000 0px 0px 5px;
-}
+} */
 
 main{
   min-height: 100vh;
   text-align: center;
-  padding: 20px 0;
+  padding: 100px 0 20px 0;
 }
 
 main > h2 {

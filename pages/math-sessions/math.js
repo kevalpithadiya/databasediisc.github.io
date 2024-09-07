@@ -15,7 +15,7 @@
   let mps_data = await airtable_res.json();  
   let session_list = document.getElementById("session-list");
 
-  for (session of mps_data.records) {
+  for (let session of mps_data.records) {
     session_info = {
       date: new Date(session.fields.Date),
       problems: session.fields["Problems PDF"]?.[0].url || "",
@@ -43,4 +43,6 @@
     session_list.appendChild(session_div);
   }
 
-})()
+  // Remove loader
+  unload();
+})();
