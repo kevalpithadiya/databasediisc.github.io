@@ -80,9 +80,9 @@ function toggle_collapsible(headerElement) {
 function create_person(data) {
     let link = document.createElement("a");
     link.className = "profile-link";
-    link.href = "/member/" + data.Username;
+    link.href = "./about/member.html?user=" + data.Username;
     link.className = "person-element";
-    data.Photo = data.Photo??[{url: "../img/user.png"}];
+    data.Photo = data.Photo??[{url: "./img/user.png"}];
     link.innerHTML = `<div class="person-profile" 
         style="background-image: url(${data.Photo[0].url})"></div>
         <div class="person-name">${data.Name}</div>`;
