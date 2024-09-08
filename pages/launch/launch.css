@@ -4,7 +4,7 @@
     font-size: 2.5em;
     text-align: center;
     align-items: center;
-    background-image: url("/img/backgroundsbundle/Taieri.png");
+    background-image: url("../../img/backgroundsbundle/Taieri.png");
 }
 
 #timeline-container {

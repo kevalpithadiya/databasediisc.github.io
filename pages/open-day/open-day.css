@@ -3,7 +3,7 @@
     height: 100vh;
     padding-top: 17vh;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/backgroundsbundle/Linth.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/backgroundsbundle/Linth.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
