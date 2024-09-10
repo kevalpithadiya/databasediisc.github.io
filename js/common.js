@@ -46,20 +46,19 @@ function openMenu() {
   document.querySelector("#nav-hamburger p").style.display = "block";
 }
 
-function setBgColor() {
-  var percent =
-    document.documentElement.scrollTop /
-    (document.documentElement.scrollHeight -
-      document.documentElement.clientHeight);
-  document.querySelector("body").style.background = `linear-gradient(
+function setBgColor(bodyElement) {
+  var percent = document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  bodyElement.style.background = `linear-gradient(
       #180834 0,
       #26032c calc(100vh + 0px),
-      rgb(${16 + percent * (15 - 16)}, ${16 + percent * (84 - 16)}, ${
-    16 + percent * (138 - 16)
-  }) 100vh
+      rgb(${16 + percent * (15 - 16)}, ${16 + percent * (84 - 16)}, ${16 + percent * (138 - 16)}) 100vh
     )`;
 }
 
-window.addEventListener("scroll", function () {
-  setBgColor();
-});
+const bodyElement = document.querySelector("body.animate-bg");
+
+if (bodyElement) {
+  window.addEventListener("scroll", function () {
+    setBgColor(bodyElement);
+  });
+}
