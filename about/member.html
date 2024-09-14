@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <base href="../">
   <meta charset="UTF-8" />
   <link rel="manifest" href="./manifest.json" />
+
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="application-name" content="Databased" />
@@ -70,71 +70,44 @@
     href="./img/icon-512x512.png"
   />
 
-  <title>Events - Databased | IISc's Undergraduate CS Club</title>
+  <title>Databased | IISc's Undergraduate CS Club</title>
   <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./css/events.css" />
+  <link rel="stylesheet" href="./css/profilePage.css" />
   <link rel="icon" href="./img/favicon-32x32.png" type="image/x-icon" />
   <script src="./js/footerinclude.js"></script>
 </head>
 
-<body class="animate-bg">    </head>
+<body>
   <div id="loader"></div>
-  
   <header>
     <header-component></header-component>
   </header>
 
-  <div id="title">
-    <h1> Events </h1>
-
-    <div id="major-event-container">
-      <div id="major-event-info">
-        <span id="major-event-info-title"></span>
-
-        <a href="./" id="major-event-info-btn">
-          View More
-          <span class="material-symbols-outlined"> arrow_forward </span>
-        </a>
-
-        <div id="major-event-slider">
-          <div class="material-symbols-outlined slider-btn" id="major-event-prev">arrow_back</div>
-          <div id="major-event-slider-count" class="slider-count"></div>
-          <div class="material-symbols-outlined slider-btn" id="major-event-next">arrow_forward</div>
-        </div>
-      </div>
-      <div id="major-event-photo"></div>
-    </div>
-  </div>
   <main>
-    <div id="eventsGrid"></div>
-  </main>
-  <footer>
-    <footer-component></footer-component>
-  </footer>
-  <div id="eventModal">
-    <div class="modalContent">
-      <div class="modalImg">
-        <button id="closeEventModal">
-          <span class="material-symbols-outlined"> close </span>
-        </button>
-        <div class="imagesContainer"></div>
-        <div class="imagesButtons"></div>
-      </div>
-      <div class="modalDetails">
-        <h1 class="modalHeading"></h1>
-        <div class="modalChips">
-          <span class="modalType"></span>
-          <span class="modalAudience"></span>
-        </div>
-        <div class="modalChips modalTopics"></div>
-        <span class="modalDate"></span>
-        <span class="modalPlace"></span>
-        <p class="modalDescription"></p>
+    <div id="person-details">
+      <div id="profile-photo"></div>
+
+      <div id="profile-batch"></div>
+      <div id="profile-name"></div>
+      <div id="profile-bio"></div>
+      <div id="profile-links">
+        <a href="" id="profile-email" target="_blank">
+          <span class="material-symbols-outlined"> mail </span>
+        </a>
+        <a href="" id="profile-linkedin" target="_blank">
+          <img src="./img/social/linkedin.png"/>
+        </a>
+        <a href="" id="profile-github" target="_blank">
+          <img src="./img/social/github.png"/>
+        </a>
       </div>
     </div>
-  </div>
-  <script src="./js/common.js"></script>
-  <script src="./js/events.js"></script>
-</body>
+  </main>
 
+    <footer>
+      <footer-component></footer-component>
+    </footer>
+    <script src="./js/common.js"></script>
+    <script src="./js/member.js"></script>
+  </body>
 </html>
