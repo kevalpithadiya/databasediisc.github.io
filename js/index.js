@@ -15,7 +15,7 @@ fetch(
   .then((response) => {
     response.records.forEach(function (row) {
       if (!row.fields.Files) {
-        var imgSrc = ["../img/Backgrounds/Ngaruroro.png"];
+        var imgSrc = ["./img/Backgrounds/Ngaruroro.png"];
       } else {
         var imgSrc = row.fields.Files.map(function (e) {
           return e.url;

@@ -126,13 +126,13 @@
 let major_events = [
   {
     text: `<span style="font-size: 30px;">DATABASED</span> <br/> <b>TECH <br/> IDEATHON</b>`,
-    link: "../pages/ideathon",
-    img: "../img/ideathon/ideathon_presentation.webp"
+    link: "./pages/ideathon",
+    img: "./img/ideathon/ideathon_presentation.webp"
   },
   {
     text: `<span style="font-size: 80px;"><b>IISc</b></span> <br/> OPEN DAY <br/> 2024`,
-    link: "../pages/open-day",
-    img: "../img/open-day/team.webp"
+    link: "./pages/open-day",
+    img: "./img/open-day/team.webp"
   }
 ]
 
@@ -186,7 +186,7 @@ fetch(
   .then((response) => {
     response.records.forEach(function (row) {
       if (!row.fields.Files) {
-        var imgSrc = ["../img/Backgrounds/Ngaruroro.png"];
+        var imgSrc = ["./img/Backgrounds/Ngaruroro.png"];
       } else {
         var imgSrc = row.fields.Files.map(function (e) {
           return e.url;
