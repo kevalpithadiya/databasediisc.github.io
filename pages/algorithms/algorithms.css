@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+
+body {
+  background-attachment: fixed;
+}
+
+#title {
+  text-align: center;
+  height: 80vh;
+  /* background: radial-gradient(ellipse at center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+  /* background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/algorithms/algofest_bg.png"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title img {
+  width: 500px;
+}
+
+#title span {
+  font-size: 32px;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px #333333;
+}
+
+#title h1 {
+	font-family: "Playwrite US Modern", cursive;
+  font-size: 120px;
+  text-shadow: 0px 0px 20px #333333;
+}
+
+@media only screen and (max-width: 1050px) {
+	#title img {
+		max-width: 50%;
+	}
+
+	#title span {
+		font-size: 24px;
+	}
+
+	#title h1 {
+		font-size: 12vw;
+	}
+}
+
+main {
+	padding: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+#schedule h2, #presentations h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	text-align: center;
+}
+
+#schedule table {
+	width: 100%;
+	margin: 20px auto 0 auto;
+	border-collapse: collapse;
+}
+
+#schedule th, #schedule td {
+	background-color: #0d2232;
+	text-align: center;
+	font-size: 18px;
+	border: solid 1px #fff;
+	padding: 7px;
+}
+
+#schedule th {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+}
+
+#presentations {
+  margin-top: 50px;
+}
