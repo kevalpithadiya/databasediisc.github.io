@@ -1,3 +1,9 @@
+// Set hash links for all presentations in the schedule
+for (let anchor of document.querySelectorAll("#schedule a.ptitle")) {
+  // Need to strip : and ' characters
+  anchor.href = "./pages/algorithms/#" + anchor.innerHTML.trim().toLowerCase().replaceAll(" ", "-").replaceAll(/[:']/g, "");
+}
+
 (async () => {
 
   let airtable_res = await fetch(
@@ -27,6 +33,7 @@
     // Initialize presentation div
     let p_div = document.createElement("div");
     p_div.classList.add("presentation");
+    p_div.id = p_info.title.toLowerCase().replaceAll(" ", "-").replaceAll(/[:']/g, "");
 
     // Construct HTML for presenters
     presenter_html = "";
