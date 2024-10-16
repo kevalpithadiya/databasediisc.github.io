@@ -132,6 +132,11 @@ main > div > h2 {
 	font-size: 24px;
 }
 
+#schedule p {
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* Presentation Information */
 
 #presentations {
