@@ -50,6 +50,8 @@
 
     // Append the presentation div to the parent
     presentations.appendChild(p_div);
+
+    unload();
   }
 
 })();
