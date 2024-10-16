@@ -56,11 +56,13 @@ main {
   border-radius: 20px;
 }
 
-#register h2, #schedule h2, #presentations h2 {
+main > div > h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 32px;
 	text-align: center;
 }
+
+/* Registration Link */
 
 #register {
   width: 100%;
@@ -109,6 +111,8 @@ main {
   letter-spacing: 1px;
 }
 
+/* Event Schedule */
+
 #schedule table {
 	width: 100%;
 	margin: 20px auto 0 auto;
@@ -128,6 +132,44 @@ main {
 	font-size: 24px;
 }
 
+/* Presentation Information */
+
 #presentations {
   margin-top: 50px;
+}
+
+.presentation {
+  padding: 20px;
+  margin: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.presentation > h2 {
+	font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+}
+
+.presenters {
+  margin-top: 10px;
+}
+
+.presenters > a:first-child, .presenters > span:first-child {
+  margin-left: 0px;
+}
+
+.presenters > a, .presenters > span {
+  font-style: italic;
+  margin-left: 20px;
+  transition: color 0.2s;
+}
+
+.presenters > a:hover {
+  color: #40a2d0;
+}
+
+.presentation > p {
+  margin-top: 20px;
+  text-align: justify;
 }
