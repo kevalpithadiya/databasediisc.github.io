@@ -104,6 +104,15 @@ main > div > h2 {
   text-decoration: none;
 }
 
+.register-button.disabled {
+  border: 2px #666666 solid;
+  cursor: not-allowed;
+}
+
+.register-button.disabled span {
+  color: #666666;
+}
+
 .register-button .material-symbols-outline {
   line-height: 40px;
 }
@@ -126,9 +135,9 @@ main > div > h2 {
   transition: letter-spacing 0.2s;
 }
 
-.register-button:hover .register-button-label {
+/* .register-button:hover .register-button-label {
   letter-spacing: 1px;
-}
+} */
 
 /* Event Schedule */
 
