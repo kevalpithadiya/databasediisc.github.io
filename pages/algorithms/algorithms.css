@@ -23,12 +23,12 @@ body {
   align-items: center;
 }
 
-#title img {
+#dbd-acm-logo {
   width: 500px;
 }
 
 #title span {
-  font-size: 32px;
+  font-size: 28px;
   margin: 20px 0 10px 0;
   font-weight: bold;
   text-shadow: 0px 0px 20px #333333;
@@ -40,26 +40,26 @@ body {
   text-shadow: 0px 0px 20px #333333;
 }
 
-#sponsors a {
-  font-family: serif;
-  transition: color 0.2s;
+#title a {
+  width: 100%;
 }
 
-#sponsors a:hover {
-  color: #40a2d0;
+#kiac-logo {
+  width: 300px;
+  box-shadow: 0 0 10px white;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1200px) {
 	#title img {
 		max-width: 50%;
 	}
 
 	#title span {
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	#title h1 {
-		font-size: 12vw;
+		font-size: 60px;
 	}
 }
 
@@ -73,6 +73,12 @@ main > div > h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 32px;
 	text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  main > div > h2 {
+    font-size: 26px;
+  }
 }
 
 /* Registration Link */
@@ -153,6 +159,16 @@ main > div > h2 {
 #schedule p {
   margin-top: 20px;
   text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  #schedule th {
+    font-size: 20px;
+  }
+  
+  #schedule td {
+    font-size: 16px;
+  }
 }
 
 /* Presentation Information */
