@@ -82,6 +82,12 @@ main > div > h2 {
   }
 }
 
+#live-stream iframe {
+  margin: 0 10%;
+  width: 80%;
+  aspect-ratio: 16/9;
+}
+
 /* Registration Link */
 
 #register {
@@ -164,6 +170,10 @@ main > div > h2 {
 #schedule th {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
+}
+
+#schedule tr > td:nth-child(2) {
+  text-align: left;
 }
 
 #schedule p {
