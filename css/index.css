@@ -371,19 +371,54 @@
 }
 
 #contact{
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 100px / 70px;  /* chosen different vertical and horizontal radius for smooth border */
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 60px 30px;
+  margin: 100px 20px;
 }
-#contactMap{
-  display: block;
-  width: 60%;
-  float: left;
+
+.contactLeftSection{
+  align-items: center;
+  justify-content: center;
+  flex: 40%;
+  padding: 20px;
 }
+
+.contactRightSection{
+  align-items: top;
+  justify-content: right;
+  flex: 60%;
+  padding: 20px;
+}
+
+#titleContact{
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 60px;
+  text-align: center;
+}
+
+.mailText{
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding-bottom: 15px;
+  text-align: right;
+}
+
+.email{
+  font-style: italic;
+}
+
 #contactDetails{
   display: block;
   width: calc(40% - 10px);
   float: left;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.8);
   margin: 0 0 0 10px;
   color: #000;
 }
@@ -412,9 +447,10 @@
 #contactDetails .socials{
   display: flex;
   flex-direction: row;
+  justify-content: right;
 }
 #contactDetails .socials a{
-  width: calc(100% / 4);
+  width: 120px;
   height: 50px;
   display: flex;
   justify-content: center;
