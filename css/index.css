@@ -372,15 +372,12 @@
 
 @media (min-width: 769px) {
   #contact{
-    border-style: solid;
-    border-color: #fff;
-    border-radius: 100px / 70px;  /* chosen different vertical and horizontal radius for smooth border */
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    padding: 60px 30px;
-    margin: 100px 20px;
+    gap: 80px;
+    padding: 60px 10px 30px 10px;
+    margin: 100px 10px 60px 10px;
   }
   
   .contactLeftSection{
@@ -391,7 +388,7 @@
   }
   
   .contactRightSection{
-    align-items: top;
+    align-items: center; 
     justify-content: right;
     flex: 60%;
     padding: 20px;
@@ -400,7 +397,7 @@
   #titleContact{
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 400; 
     font-size: 60px;
     text-align: center;
   }
@@ -409,6 +406,11 @@
     font-family: "Lucida Console", "Courier New", monospace;
     padding-bottom: 15px;
     text-align: right;
+    /*font-size: 1.5vw;*/
+  }
+
+  .mobile-br{
+    display: none;
   }
   
   .email{
@@ -419,29 +421,39 @@
 @media (max-width: 769px) {
   #contact{
     overflow: hidden;
-    padding: 10% 5%;
-    margin: 10% 10%;
+    padding: 4px 2px 1px 2px;
+    margin: 20px 10px 1px 10px;
     text-align: center;
   }
 
   #titleContact{
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    font-weight: 200;
-    font-size: 8vw;
+    font-weight: 500; 
+    font-size: 36px;
     text-align: center;
-    padding: 5% 5%;
+    padding: 18px;
   }
   
   .mailText{
     font-family: "Lucida Console", "Courier New", monospace;
-    padding: 12% 5%;
-    font-size: 3.5vw;
+    padding: 30px 5px 20px 5px;
+    font-size: 16px;
     text-align: center;
+    justify-content: center;
+  }
+
+  .mobile-br{
+    display: inline;
   }
   
   .email{
     font-style: italic;
+    text-align: center;
+  }
+
+  .mailUsAt{
+    text-align: center;
   }
 }
 
@@ -451,7 +463,6 @@
   width: calc(40% - 10px);
   float: left;
   box-sizing: border-box;
-  margin: 0 0 0 10px;
   color: #000;
 }
 
@@ -479,7 +490,20 @@
 #contactDetails .socials{
   display: flex;
   flex-direction: row;
-  justify-content: right;
+}
+
+@media (min-width: 769px){
+  #contactDetails .socials{
+    justify-content: right;
+  }
+}
+
+@media (max-width: 769px){
+  #contactDetails .socials{
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 400px;
+  }
 }
 #contactDetails .socials a{
   height: 50px;
