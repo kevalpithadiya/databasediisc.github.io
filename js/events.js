@@ -127,7 +127,7 @@ let major_events = [
   {
     text: `<span style="font-size: 50px;"><b>Algorithm <br/> Festival</b></span>`,
     link: "./pages/algorithms",
-    img: "./img/algorithms/poster.png"
+    img: "./img/algorithms/group-pic.webp"
   },
   {
     text: `<span style="font-size: 30px;">DATABASED</span> <br/> <b>TECH <br/> IDEATHON</b>`,
