@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal Strategy Game</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+    <script src="assets/js/game.js" defer></script>
+</head>
+<body>
+    <button id="eshowbtn" onclick="toggleExplanation()">〈 </button>
+    <div id="content">
+        <h1 id="title">Maximize the Sum</h1>
+        <div class="buttons">
+            <button class="btn" onclick="startGame(1)">Play as Player 1</button>
+            <button class="btn" onclick="startGame(2)">Play as Player 2</button>
+        </div>
+
+        <div class="container" id="box-container"></div>
+        <div id="result"></div>
+        <div id="confetti-container"></div>
+    </div>
+    <div id="explain">
+        <div id="etitle">
+            Explanation
+            <button id="etitlebtn" onclick="toggleExplanation()">✗</button>
+        </div>
+        <div id="explainc">
+        </div>
+    </div>
+</body>
+</html>
