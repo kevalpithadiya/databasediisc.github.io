@@ -136,7 +136,7 @@ let major_events = [
   },
   {
     text: `<span style="font-size: 80px;"><b>IISc</b></span> <br/> OPEN DAY <br/> 2024`,
-    link: "./pages/open-day",
+    link: "./pages/open-day-2024",
     img: "./img/open-day/team.webp"
   }
 ]
